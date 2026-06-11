@@ -143,14 +143,28 @@
 
   /* ---------- VSL modal ---------- */
   var modal = document.getElementById('vsl-modal');
+  var vslIframe = document.getElementById('vsl-iframe');
+  var VSL_SRC = 'https://www.youtube.com/embed/LpDqe-wfgpA?autoplay=1&rel=0';
+
+  function openVsl() {
+    if (!modal) return;
+    modal.classList.add('open');
+    if (vslIframe) vslIframe.src = VSL_SRC;
+  }
+  function closeVsl() {
+    if (!modal) return;
+    modal.classList.remove('open');
+    if (vslIframe) vslIframe.src = '';
+  }
+
   document.querySelectorAll('[data-open-vsl]').forEach(function (b) {
-    b.addEventListener('click', function () { if (modal) modal.classList.add('open'); });
+    b.addEventListener('click', openVsl);
   });
   if (modal) {
     modal.addEventListener('click', function (e) {
-      if (e.target === modal || e.target.closest('.modal__close')) modal.classList.remove('open');
+      if (e.target === modal || e.target.closest('.modal__close')) closeVsl();
     });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') modal.classList.remove('open'); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeVsl(); });
   }
 
   /* ---------- Smooth anchor offset for fixed header ---------- */

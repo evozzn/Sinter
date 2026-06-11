@@ -257,8 +257,7 @@ section { position: relative; }
 
 /* VSL */
 .vsl { position: relative; width: 100%; max-width: 860px; margin: 40px auto 0; }
-.vsl__frame { aspect-ratio: 16/9; width: 100%; }
-.vsl__frame .ph__label { align-self: flex-start; margin-top: 22px; }
+.vsl__frame { aspect-ratio: 16/9; width: 100%; border-radius: 14px; overflow: hidden; }
 .vsl__play {
   position: absolute; inset: 0; margin: auto;
   width: 84px; height: 84px; border-radius: 50%;
