@@ -70,19 +70,29 @@
     var gap = 14;
     var idx = 0;
 
-    function itemWidth() { return photos[0].offsetWidth + gap; }
-    function visibleCount() { return Math.max(1, Math.floor(track.parentElement.offsetWidth / itemWidth())); }
-    function maxIdx() { return Math.max(0, photos.length - visibleCount()); }
+    function offsetAt(i) {
+      var o = 0;
+      for (var j = 0; j < i; j++) o += photos[j].offsetWidth + gap;
+      return o;
+    }
+
+    function trackWidth() {
+      return offsetAt(photos.length) - gap;
+    }
+
+    function canGoNext() {
+      return offsetAt(idx) + track.parentElement.offsetWidth < trackWidth();
+    }
 
     function update() {
-      track.style.transform = 'translateX(' + (-idx * itemWidth()) + 'px)';
+      track.style.transform = 'translateX(' + (-offsetAt(idx)) + 'px)';
       prevBtn.disabled = idx === 0;
-      nextBtn.disabled = idx >= maxIdx();
+      nextBtn.disabled = !canGoNext();
     }
 
     prevBtn.addEventListener('click', function () { if (idx > 0) { idx--; update(); } });
-    nextBtn.addEventListener('click', function () { if (idx < maxIdx()) { idx++; update(); } });
-    window.addEventListener('resize', function () { idx = Math.min(idx, maxIdx()); update(); });
+    nextBtn.addEventListener('click', function () { if (canGoNext()) { idx++; update(); } });
+    window.addEventListener('resize', function () { idx = 0; update(); });
     update();
   }());
 
