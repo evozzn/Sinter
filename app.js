@@ -60,6 +60,32 @@
   applyStagger('.aud-list',  '.aud-item.reveal', 0.08);
 
 
+  /* ---------- Gallery carousel ---------- */
+  (function () {
+    var track = document.querySelector('.gallery__track');
+    var prevBtn = document.querySelector('.gallery__arrow--prev');
+    var nextBtn = document.querySelector('.gallery__arrow--next');
+    if (!track || !prevBtn || !nextBtn) return;
+    var photos = Array.prototype.slice.call(track.querySelectorAll('.gphoto'));
+    var gap = 14;
+    var idx = 0;
+
+    function itemWidth() { return photos[0].offsetWidth + gap; }
+    function visibleCount() { return Math.max(1, Math.floor(track.parentElement.offsetWidth / itemWidth())); }
+    function maxIdx() { return Math.max(0, photos.length - visibleCount()); }
+
+    function update() {
+      track.style.transform = 'translateX(' + (-idx * itemWidth()) + 'px)';
+      prevBtn.disabled = idx === 0;
+      nextBtn.disabled = idx >= maxIdx();
+    }
+
+    prevBtn.addEventListener('click', function () { if (idx > 0) { idx--; update(); } });
+    nextBtn.addEventListener('click', function () { if (idx < maxIdx()) { idx++; update(); } });
+    window.addEventListener('resize', function () { idx = Math.min(idx, maxIdx()); update(); });
+    update();
+  }());
+
   /* ---------- Countdown ---------- */
   var target = new Date('2026-09-12T08:00:00-04:00').getTime();
   var cd = {
