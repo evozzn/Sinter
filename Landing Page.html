@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>2ª Jornada de Práticas Integrativas de Saúde — Sinter MT</title>
+<meta name="description" content="Dois dias de imersão em Saúde Mental, Ciência e o Futuro da Saúde. 12 e 13 de setembro de 2026, CDL Cuiabá. 15 especialistas. Certificado de 16h." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<template id="__bundler_thumbnail">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#043672"/>
+    <text x="50" y="46" font-family="Georgia, serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="600">S</text>
+    <text x="50" y="66" font-family="monospace" font-size="7" letter-spacing="1.5" fill="#9db8db" text-anchor="middle">JORNADA</text>
+  </svg>
+</template>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="#topo" aria-label="Sinter — início">
+      <img class="brand__mark" src="img/logo-sinter.png" alt="Logo Sinter" />
+      <span class="brand__txt">
+        <b>SINTER&nbsp;MT</b>
+        <span>4ª CEPICS · Mato Grosso</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="#evento">O evento</a>
+      <a href="#palestrantes">Palestrantes</a>
+      <a href="#programacao">Programação</a>
+      <a href="#local">Local</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn--gold" href="#ingresso">Garantir vaga</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ SEÇÃO 1 — HERO ============ -->
+<section class="hero" id="topo">
+  <div class="wrap hero__inner">
+    <div class="hero__copy">
+      <span class="kicker reveal">2ª Jornada · 4ª CEPICS · 2026</span>
+      <h1 class="reveal d1">O que a ciência já sabe sobre <em>saúde mental</em> — e como isso vai transformar sua prática (e sua vida)</h1>
+      <p class="hero__sub lede reveal d2">A 2ª Jornada de Práticas Integrativas de Saúde reúne <strong>15 especialistas</strong> em Cuiabá para dois dias de imersão em Saúde Mental, Ciência e o Futuro da Saúde.</p>
+    </div>
+
+    <!-- VSL -->
+    <div class="vsl reveal d2">
+      <div class="vsl__frame ph ph--navy">
+        <span class="ph__label">Vídeo de apresentação · VSL</span>
+      </div>
+      <button class="vsl__play" data-open-vsl aria-label="Reproduzir vídeo de apresentação">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+      <div class="vsl__cap">
+        <span class="dot"></span>
+        <span><b>Luís Manoel Ferreira</b> · <span>Vice-Presidente · Sinter MT — Sindicato dos Terapeutas do Estado de Mato Grosso</span></span>
+      </div>
+    </div>
+
+    <div class="hero__cta reveal d3">
+      <a class="btn btn--gold btn--lg" href="#ingresso">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4Z"/><path d="M13 5v14"/></svg>
+        Garantir minha vaga agora
+      </a>
+    </div>
+
+    <div class="hero__meta reveal d4">
+      <span class="meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        <b>12 e 13 de setembro de 2026</b>
+      </span>
+      <span class="meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        CDL Cuiabá — Rua Cândido Mariano, 775
+      </span>
+      <span class="meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1 2.7 3 6 3s6-2 6-3v-5"/></svg>
+        Certificado digital · <b>16h</b>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COUNTDOWN STRIP ============ -->
+<section class="strip">
+  <div class="wrap strip__inner">
+    <span class="strip__label">Contagem regressiva para a Jornada</span>
+    <div class="countdown" aria-label="Tempo restante">
+      <div class="cd-unit"><b id="cd-days">00</b><span>dias</span></div>
+      <div class="cd-unit"><b id="cd-hours">00</b><span>horas</span></div>
+      <div class="cd-unit"><b id="cd-mins">00</b><span>min</span></div>
+      <div class="cd-unit"><b id="cd-secs">00</b><span>seg</span></div>
+    </div>
+    <a class="btn btn--gold" href="#ingresso">Quero participar</a>
+  </div>
+</section>
+
+<!-- ============ SEÇÃO 2 — VIVENCIAR ============ -->
+<section class="section-pad" id="vivenciar">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">A experiência</span>
+      <h2>O que você vai vivenciar nos dias 12 e 13 de setembro</h2>
+    </div>
+    <div class="benefits reveal d1">
+      <div class="benefit">
+        <span class="benefit__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/></svg></span>
+        <h3>15 palestrantes de referência</h3>
+        <p>Especialistas com atuação comprovada em saúde mental e práticas integrativas — selecionados pela profundidade do conhecimento, não pela popularidade.</p>
+      </div>
+      <div class="benefit">
+        <span class="benefit__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2V18h6v-1.3c0-.8.4-1.5 1-2A7 7 0 0 0 12 2Z"/></svg></span>
+        <h3>Ciência atual, sem modismos</h3>
+        <p>Aprofunde sua compreensão sobre saúde mental com base na ciência mais atual — sem achismos e sem receitas prontas.</p>
+      </div>
+      <div class="benefit">
+        <span class="benefit__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></span>
+        <h3>Conexões com propósito</h3>
+        <p>Conecte-se com profissionais e estudantes da saúde que compartilham do mesmo propósito — dentro do seu próprio estado.</p>
+      </div>
+      <div class="benefit">
+        <span class="benefit__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1 2.7 3 6 3s6-2 6-3v-5"/></svg></span>
+        <h3>Certificado de 16 horas</h3>
+        <p>Receba seu certificado digital de participação com carga horária — válido para atualização do histórico profissional e acadêmico.</p>
+      </div>
+      <div class="benefit">
+        <span class="benefit__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2V18h6v-1.3c0-.8.4-1.5 1-2A7 7 0 0 0 12 2Z"/><path d="M12 6v4M10 8h4"/></svg></span>
+        <h3>Ferramentas aplicáveis</h3>
+        <p>Saia com perspectivas novas e ferramentas concretas para aplicar na sua vida ou na sua prática clínica já a partir do dia seguinte.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEÇÃO 3 — PALESTRANTES ============ -->
+<section class="section--navy section-pad" id="palestrantes">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">No palco</span>
+      <h2>Quem vai estar no palco</h2>
+      <p class="lede" style="margin-top:18px;">Especialistas com atuação comprovada em saúde mental, práticas integrativas e medicina do futuro. Confira alguns dos nomes confirmados.</p>
+    </div>
+    <div class="speakers reveal d1">
+      <article class="speaker">
+        <div class="speaker__photo"><img src="img/palestrantes/alex-bill-2.png" alt="Alex Bill" style="object-position: center top;" /></div>
+        <p class="speaker__name">Alex Bill</p>
+        <p class="speaker__role">Palestrante</p>
+        <p class="speaker__theme">Reengenharia mental através da epigenética</p>
+      </article>
+      <article class="speaker">
+        <div class="speaker__photo"><img src="img/palestrantes/alex-alves.jpeg" alt="Dr. Alex Alves" /></div>
+        <p class="speaker__name">Dr. Alex Alves</p>
+        <p class="speaker__role">Psicólogo, Neurocientista · Especialista em Saúde Mental e Emocional</p>
+        <p class="speaker__theme">A interface humano biopsicossocioenergético digital — o fim da infância</p>
+      </article>
+      <article class="speaker">
+        <div class="speaker__photo"><img src="img/palestrantes/elias-pereira.jpg" alt="Dr. Elias Pereira" /></div>
+        <p class="speaker__name">Dr. Elias Pereira</p>
+        <p class="speaker__role">Naturopata · Especialista em Oncologia Integrativa</p>
+        <p class="speaker__theme">Tema a confirmar</p>
+      </article>
+      <article class="speaker">
+        <div class="speaker__photo"><img src="img/palestrantes/anilson.jpeg" alt="Professor Anilson" /></div>
+        <p class="speaker__name">Professor Anilson</p>
+        <p class="speaker__role">CEO da BIOWELFARE</p>
+        <p class="speaker__theme">O papel da THTC na saúde emocional e alívio da dor</p>
+      </article>
+      <article class="speaker">
+        <div class="speaker__photo"><img src="img/palestrantes/reginaldo-zanetti.jpeg" alt="Reginaldo Zanetti" /></div>
+        <p class="speaker__name">Reginaldo Zanetti</p>
+        <p class="speaker__role">CEO da Reale Energya</p>
+        <p class="speaker__theme">Tema a confirmar</p>
+      </article>
+      <article class="speaker">
+        <div class="speaker__photo"><img src="img/palestrantes/wylzeneth-siqueira.jpeg" alt="Wylzeneth Siqueira" /></div>
+        <p class="speaker__name">Wylzeneth Siqueira</p>
+        <p class="speaker__role">Farmacêutica bioquímica · Mestre em Saúde Coletiva (UFG) · Práticas Integrativas em Saúde</p>
+        <p class="speaker__theme">Do acolhimento ao plano terapêutico: raciocínio clínico integrativo na experiência do Projeto VIDA com servidores públicos de Primavera do Leste – MT</p>
+      </article>
+    </div>
+    <p class="speakers-note reveal">+ outros especialistas — a grade completa de palestrantes será divulgada em breve.</p>
+  </div>
+</section>
+
+<!-- ============ SEÇÃO 4 — PROBLEMA ============ -->
+<section class="section-pad" id="problema">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Talvez você reconheça</span>
+      <h2>Você já se sentiu assim?</h2>
+    </div>
+    <div class="problems">
+      <div class="problem reveal"><span class="problem__n">01</span><p>Trabalha com saúde há anos — mas sente que o modelo atual não dá conta da complexidade do ser humano.</p></div>
+      <div class="problem reveal"><span class="problem__n">02</span><p>Quer integrar práticas complementares à sua atuação, mas não sabe por onde começar com embasamento científico.</p></div>
+      <div class="problem reveal"><span class="problem__n">03</span><p>Percebe que a saúde mental dos seus pacientes — ou da sua própria vida — está pedindo socorro, enquanto o sistema continua olhando só para os sintomas.</p></div>
+      <div class="problem reveal"><span class="problem__n">04</span><p>Sente que a atualização profissional está ficando para trás enquanto a ciência integrativa avança em velocidade acelerada.</p></div>
+      <div class="problem reveal"><span class="problem__n">05</span><p>Quer se conectar com outros profissionais que pensam de forma ampliada — e não encontra esse espaço em Mato Grosso.</p></div>
+    </div>
+    <p class="problem-cta reveal">Se você disse sim para qualquer uma dessas situações, este evento foi construído para você.</p>
+  </div>
+</section>
+
+<!-- ============ SEÇÃO 5 — O QUE É ============ -->
+<section class="section-pad" id="evento" style="background:var(--paper-2);">
+  <div class="wrap">
+    <div class="about__grid">
+      <div class="about__text reveal">
+        <span class="kicker">O evento</span>
+        <h2 class="sec-head" style="font-size:clamp(28px,4vw,50px);margin-top:16px;">A maior imersão em saúde integrativa de Mato Grosso</h2>
+        <p>A 2ª Jornada de Práticas Integrativas de Saúde em Mato Grosso — <strong>4ª edição das CEPICs</strong> — é o maior encontro do estado dedicado a conectar ciência e saúde integrativa.</p>
+        <p>Dois dias completos de palestras, trocas e conhecimento aplicado, com foco no tema mais urgente da saúde contemporânea: <strong>Saúde Mental, Ciência e o Futuro da Saúde.</strong></p>
+        <p>Não é um evento comum de saúde. É uma imersão que une o rigor científico com a profundidade das práticas integrativas — para profissionais, estudantes e qualquer pessoa que acredita que saúde é muito mais do que ausência de doença.</p>
+      </div>
+      <div class="about__media reveal d1"><img src="img/evento/anfiteatro.jpeg" alt="Anfiteatro Adão Flores — local do evento" /></div>
+    </div>
+    <div class="stats reveal d2">
+      <div class="stat"><b>15</b><span>palestrantes especialistas</span></div>
+      <div class="stat"><b>2</b><span>dias de imersão</span></div>
+      <div class="stat"><b>16h</b><span>de certificado digital</span></div>
+      <div class="stat"><b>∞</b><span>conexões para a vida</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEÇÃO 6 — PARA QUEM É ============ -->
+<section class="section-pad" id="para-quem">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Para quem é</span>
+      <h2>Este evento foi feito para você — se…</h2>
+    </div>
+    <div class="audience__grid">
+      <div class="aud-list">
+        <div class="aud-item reveal">
+          <span class="aud-item__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <p>Você é <strong>profissional de saúde</strong> (terapeuta, médico, psicólogo, fisioterapeuta, nutricionista, enfermeiro, educador físico) e quer atualizar sua prática com embasamento científico em saúde integrativa.</p>
+        </div>
+        <div class="aud-item reveal d1">
+          <span class="aud-item__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <p>Você é <strong>estudante da área da saúde</strong> e quer sair na frente com uma visão ampliada do cuidado humano antes de se formar.</p>
+        </div>
+        <div class="aud-item reveal d2">
+          <span class="aud-item__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <p>Você <strong>não é da área da saúde</strong>, mas acredita que saúde mental é prioridade — e quer entender, com base na ciência, quais caminhos já estão disponíveis.</p>
+        </div>
+        <div class="aud-item reveal d3">
+          <span class="aud-item__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <p>Você quer se conectar com uma <strong>rede de profissionais que pensam diferente</strong>, dentro de Mato Grosso.</p>
+        </div>
+      </div>
+      <aside class="not-for reveal d1">
+        <h3>Para quem NÃO é</h3>
+        <div class="not-for__item"><span class="not-for__x">✕</span> Para quem busca soluções mágicas.</div>
+        <div class="not-for__item"><span class="not-for__x">✕</span> Para quem quer um evento superficial de motivação, sem profundidade.</div>
+        <div class="not-for__item"><span class="not-for__x">✕</span> Para quem prefere aprender sozinho, sem a riqueza da troca presencial com especialistas.</div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEÇÃO 7 — PROGRAMAÇÃO ============ -->
+<section class="section-pad" id="programacao" style="background:var(--paper-2);">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Programação</span>
+      <h2>Dois dias que vão mudar a forma como você pensa sobre saúde</h2>
+    </div>
+    <div class="agenda">
+      <div class="day reveal d1">
+        <div class="day__head">
+          <span class="eyebrow-num">Dia 1 · Sábado</span>
+          <h3>12 de setembro</h3>
+        </div>
+        <div class="day__body">
+          <div class="slot"><span class="slot__time">08:00</span><span class="slot__title">Credenciamento e boas-vindas</span></div>
+          <div class="slot slot--break"><span class="slot__time">08:30</span><span class="slot__title">Coffee break de abertura</span></div>
+          <div class="slot"><span class="slot__time">09:00</span><span class="slot__title">Abertura oficial</span></div>
+          <div class="slot"><span class="slot__time">—</span><span class="slot__title">Palestra 1 <span>[Título · Palestrante]</span></span></div>
+          <div class="slot"><span class="slot__time">—</span><span class="slot__title">Palestra 2 <span>[Título · Palestrante]</span></span></div>
+          <div class="slot slot--break"><span class="slot__time">—</span><span class="slot__title">Intervalo</span></div>
+          <div class="slot"><span class="slot__time">—</span><span class="slot__title">Palestra 3 <span>[Título · Palestrante]</span></span></div>
+          <div class="slot"><span class="slot__time">—</span><span class="slot__title">Palestra 4 · 5 <span>[Título · Palestrante]</span></span></div>
+          <div class="slot"><span class="slot__time">—</span><span class="slot__title">Mesa-redonda · encerramento do dia</span></div>
+        </div>
+      </div>
+      <div class="day reveal d2">
+        <div class="day__head">
+          <span class="eyebrow-num">Dia 2 · Domingo</span>
+          <h3>13 de setembro</h3>
+        </div>
+        <div class="day__body">
+          <div class="slot"><span class="slot__time">—</span><span class="slot__title">Abertura do dia</span></div>
+          <div class="slot"><span class="slot__time">—</span><span class="slot__title">Palestra 6 · 7 <span>[Título · Palestrante]</span></span></div>
+          <div class="slot slot--break"><span class="slot__time">—</span><span class="slot__title">Intervalo</span></div>
+          <div class="slot"><span class="slot__time">—</span><span class="slot__title">Palestra 8 · 9 <span>[Título · Palestrante]</span></span></div>
+          <div class="slot"><span class="slot__time">—</span><span class="slot__title">Palestra 10 <span>[Título · Palestrante]</span></span></div>
+          <div class="slot"><span class="slot__time">—</span><span class="slot__title">Sessão de encerramento + certificação</span></div>
+          <div class="slot"><span class="slot__time">—</span><span class="slot__title">Encerramento oficial</span></div>
+          <div class="slot slot--break"><span class="slot__time">após</span><span class="slot__title">Happy hour de confraternização</span></div>
+        </div>
+      </div>
+    </div>
+    <p class="speakers-note reveal" style="color:var(--ink-faint);margin-top:30px;">Horários e títulos das palestras em finalização — grade completa em breve.</p>
+  </div>
+</section>
+
+<!-- ============ SEÇÃO 8 — DIFERENCIAIS ============ -->
+<section class="section-pad" id="diferenciais">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Diferenciais</span>
+      <h2>Por que a Jornada é diferente</h2>
+    </div>
+    <div class="diffs">
+      <div class="diff reveal">
+        <span class="diff__mark">✦</span>
+        <h3>Ciência sem dogma</h3>
+        <p>Todos os palestrantes apresentam práticas com evidência científica. Nenhum modismo sem embasamento entra no palco.</p>
+      </div>
+      <div class="diff reveal d1">
+        <span class="diff__mark">✦</span>
+        <h3>Curadoria rigorosa</h3>
+        <p>Cada especialista foi selecionado pela profundidade do conteúdo e pela experiência clínica real — não pela popularidade nas redes.</p>
+      </div>
+      <div class="diff reveal d2">
+        <span class="diff__mark">✦</span>
+        <h3>Networking com propósito</h3>
+        <p>Dois dias no mesmo espaço com pessoas que compartilham do mesmo propósito. As conexões nos intervalos valem tanto quanto as palestras.</p>
+      </div>
+      <div class="diff reveal d3">
+        <span class="diff__mark">✦</span>
+        <h3>Certificado com carga horária</h3>
+        <p>Reconhecimento formal da sua atualização — 16h válidas para histórico acadêmico e profissional.</p>
+      </div>
+      <div class="diff diff--wide reveal">
+        <span class="diff__mark">✦</span>
+        <div>
+          <h3>Mato Grosso no centro da conversa</h3>
+          <p>Um evento de nível nacional acontecendo aqui — para quem está aqui. Sem precisar viajar para São Paulo ou Brasília para acessar o melhor da saúde integrativa brasileira.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEÇÃO 9/11 — DEPOIMENTOS + GALERIA ============ -->
+<section class="section-pad" id="depoimentos" style="background:var(--paper-2);">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Quem já viveu</span>
+      <h2>Quem já viveu, não esquece</h2>
+      <p class="lede" style="margin-top:16px;">Mais de <strong>220 participantes</strong> em média por edição já passaram pela Jornada. A próxima história pode ser a sua.</p>
+    </div>
+
+    <div class="gallery reveal d1">
+      <figure class="gphoto"><img src="img/evento/g1-palco.jpg" alt="Palestra na Jornada com a plateia" loading="lazy" /></figure>
+      <figure class="gphoto"><img src="img/evento/g6-equipe.jpg" alt="Palestrantes e organização da Jornada" loading="lazy" /></figure>
+      <figure class="gphoto"><img src="img/evento/g3-conexao.jpeg" alt="Participantes em conexão" loading="lazy" /></figure>
+      <figure class="gphoto"><img src="img/evento/g7-plateia.jpg" alt="Plateia durante a abertura" loading="lazy" /></figure>
+      <figure class="gphoto"><img src="img/evento/g4-meditacao.jpg" alt="Momento de prática integrativa" loading="lazy" /></figure>
+      <figure class="gphoto"><img src="img/evento/g2-palestrante.jpg" alt="Palestrante no palco" loading="lazy" /></figure>
+      <figure class="gphoto"><img src="img/evento/g11-photocall.jpg" alt="Equipe no photocall da Jornada" loading="lazy" /></figure>
+      <figure class="gphoto"><img src="img/evento/g5-palestrante2.jpeg" alt="Palestra sobre autorregulação emocional" loading="lazy" /></figure>
+      <figure class="gphoto"><img src="img/evento/g8-grupo.jpg" alt="Participantes e expositores" loading="lazy" /></figure>
+      <figure class="gphoto"><img src="img/evento/g9-tantra.jpeg" alt="Palestrante durante apresentação" loading="lazy" /></figure>
+      <figure class="gphoto"><img src="img/evento/g13-gratidao.jpg" alt="Momento de gratidão no palco" loading="lazy" /></figure>
+      <figure class="gphoto"><img src="img/evento/g16-plateia2.jpg" alt="Plateia lotada durante palestra" loading="lazy" /></figure>
+      <figure class="gphoto"><img src="img/evento/g10-grupo2.jpg" alt="Grupo de participantes no photocall" loading="lazy" /></figure>
+      <figure class="gphoto"><img src="img/evento/g12-photocall2.jpg" alt="Convidados no photocall" loading="lazy" /></figure>
+      <figure class="gphoto"><img src="img/evento/g14-grupo3.jpg" alt="Organização e palestrantes reunidos" loading="lazy" /></figure>
+      <figure class="gphoto"><img src="img/evento/g15-patrocinio.jpg" alt="Apresentação dos patrocinadores" loading="lazy" /></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEÇÃO 10 — LOCAL ============ -->
+<section class="section-pad" id="local">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">O local</span>
+      <h2>Onde vai acontecer</h2>
+    </div>
+    <div class="venue__grid">
+      <div class="venue__main reveal d1"><img src="img/local/fachada.jpeg" alt="Fachada CDL Cuiabá" loading="lazy" /></div>
+      <div class="venue__info reveal d2">
+        <h3>CDL — Câmara de Dirigentes Lojistas de Cuiabá</h3>
+        <p class="venue__addr">Rua Cândido Mariano, 775 — Cuiabá, Mato Grosso</p>
+        <p style="margin-top:14px;color:var(--ink-soft);">Espaço amplo, climatizado e estruturado para receber um evento de referência em saúde integrativa.</p>
+
+        <div class="venue__detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>
+          <div><b>Estacionamento</b><span>Disponibilidade e opções próximas a confirmar.</span></div>
+        </div>
+        <div class="venue__detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2Z"/></svg>
+          <div><b>Como chegar</b><span>Principais rotas e pontos de referência a confirmar.</span></div>
+        </div>
+      </div>
+      <div class="venue__tiles reveal d2">
+        <figure class="vtile"><img src="img/local/foyer.jpeg" alt="Foyer de entrada da CDL" loading="lazy" /></figure>
+        <figure class="vtile"><img src="img/local/auditorio.jpeg" alt="Anfiteatro Adão Flores" loading="lazy" /></figure>
+        <div class="ph map-embed"><iframe title="Mapa — CDL Cuiabá" src="https://www.google.com/maps?q=Rua%20C%C3%A2ndido%20Mariano%2C%20775%2C%20Cuiab%C3%A1%20-%20MT&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEÇÃO 12 — INVESTIMENTO ============ -->
+<section class="section-pad" id="ingresso" style="background:var(--paper-2);">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Investimento</span>
+      <h2>Escolha seu ingresso para a 2ª Jornada</h2>
+      <p class="lede" style="margin-top:16px;">Primeiro lote · vagas limitadas à capacidade do espaço. Garanta o seu pelo menor valor.</p>
+    </div>
+    <div class="tickets">
+      <!-- STANDARD -->
+      <div class="ticket reveal d1">
+        <div class="ticket__top">
+          <b>Standard</b>
+          <span class="ticket__badge">1º Lote</span>
+        </div>
+        <div class="ticket__body">
+          <div class="ticket__price">
+            <span class="from">a partir de</span>
+            <span class="amount"><span class="val">R$&nbsp;249</span><span class="cents">,00</span></span>
+          </div>
+          <p class="ticket__pay">Cartão de crédito · Boleto · Pix</p>
+          <ul class="ticket__incl">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Dois dias de evento</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Participação em mais de 15 palestras</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Kit boas-vindas</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Acesso à feira com mais de 15 expositores</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Desconto exclusivo nos produtos</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Participação em sorteios e brindes</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Certificado de participação</li>
+          </ul>
+          <a class="btn btn--ghost btn--lg" href="https://chk.eduzz.com/D0R8J5GA9Y" target="_blank" rel="noopener">Garantir Standard</a>
+        </div>
+      </div>
+
+      <!-- VIP -->
+      <div class="ticket ticket--vip reveal d2">
+        <div class="ticket__top">
+          <b>VIP</b>
+          <span class="ticket__badge ticket__badge--vip">Experiência completa</span>
+        </div>
+        <div class="ticket__body">
+          <div class="ticket__price">
+            <span class="from">a partir de</span>
+            <span class="amount"><span class="val">R$&nbsp;479</span><span class="cents">,99</span></span>
+          </div>
+          <p class="ticket__pay">Cartão de crédito · Boleto · Pix</p>
+          <ul class="ticket__incl">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Tudo do ingresso Standard, mais:</li>
+            <li class="vip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Jantar exclusivo com os palestrantes</li>
+            <li class="vip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> As primeiras poltronas (30 lugares)</li>
+            <li class="vip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Sacola dourada</li>
+            <li class="vip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Credenciamento rápido e sem filas</li>
+          </ul>
+          <a class="btn btn--gold btn--lg" href="https://chk.eduzz.com/8WPNX5KN0P" target="_blank" rel="noopener">Garantir VIP</a>
+        </div>
+      </div>
+    </div>
+    <div class="secure-row" style="justify-content:center;margin-top:28px;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      Pagamento 100% seguro · processado pela Eduzz
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEÇÃO 13 — FAQ ============ -->
+<section class="section-pad" id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Dúvidas</span>
+      <h2>Perguntas frequentes</h2>
+    </div>
+    <div class="faq reveal d1">
+      <div class="faq-item">
+        <button class="faq-q">Quem pode adquirir este ingresso?<span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a__inner">Profissionais da saúde e pessoas que acompanham e se interessam pelo assunto, pelas novidades e pelos avanços das práticas integrativas na saúde.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Quantas palestras serão ao todo?<span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a__inner">Aproximadamente 15 palestras distribuídas ao longo dos dois dias de evento.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">O evento emite certificado?<span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a__inner">Sim. Todos os participantes recebem certificado digital de participação com 16h de carga horária ao final do evento, válido para atualização do histórico profissional e acadêmico.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">O evento é presencial ou online?<span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a__inner">100% presencial, na CDL — Rua Cândido Mariano, 775, Cuiabá/MT. A existência de transmissão online será confirmada pela organização.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Quais são as formas de pagamento?<span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a__inner">Cartão de crédito, boleto bancário ou Pix.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Qual a diferença entre o ingresso Standard e o VIP?<span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a__inner">O Standard dá acesso aos dois dias de evento, a mais de 15 palestras, kit boas-vindas, feira de expositores, descontos, sorteios e certificado. O VIP inclui tudo isso e ainda: jantar exclusivo com os palestrantes, as primeiras poltronas (30 lugares), sacola dourada e credenciamento rápido sem filas.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">O que devo levar no dia?<span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a__inner">Documento de identidade para o credenciamento e material para anotações. O certificado será emitido digitalmente.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Posso levar acompanhante?<span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a__inner">Sim, desde que o acompanhante adquira o seu próprio ingresso.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Ao participar estarei autorizando o uso da minha imagem?<span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a__inner">Sim. Todo o conteúdo em vídeo e foto produzido durante o evento é de propriedade da Sinter e poderá ser utilizado por ela para fins institucionais, educativos ou promocionais.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Ainda tenho dúvidas. Como falo com a organização?<span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a__inner">Fale com a gente pelo WhatsApp ou e-mail informados no rodapé desta página.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEÇÃO 14 — CTA FINAL ============ -->
+<section class="final section-pad">
+  <div class="wrap">
+    <span class="kicker kicker--center reveal" style="color:var(--gold);">A decisão é sua</span>
+    <h2 class="reveal d1">Saúde mental não pode esperar. E você também não.</h2>
+    <p class="reveal d2">Nos dias 12 e 13 de setembro, Cuiabá vai sediar a conversa mais importante da saúde contemporânea em Mato Grosso. 15 especialistas. Dois dias. Uma experiência que vai mudar a forma como você pensa, cuida e vive a saúde.</p>
+    <p class="final__big reveal d2">A pergunta que fica é simples: você vai estar lá?</p>
+    <a class="btn btn--gold btn--lg reveal d3" href="#ingresso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4Z"/><path d="M13 5v14"/></svg>
+      Sim — quero garantir minha vaga
+    </a>
+    <p class="final__fine reveal d3">⚡ Vagas limitadas à capacidade do espaço · Certificado de 16h incluso</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <div class="brand" style="margin-bottom:16px;">
+          <img class="brand__mark" src="img/logo-sinter.png" alt="Logo Sinter" />
+          <span class="brand__txt"><b>SINTER MT</b><span>4ª CEPICS</span></span>
+        </div>
+        <p>Realização: Sinter — Sindicato dos Terapeutas de Mato Grosso.<br/>Apoio: CDL Cuiabá.</p>
+      </div>
+      <div>
+        <h4>Evento</h4>
+        <p>12 e 13 de setembro de 2026<br/>CDL Cuiabá — Rua Cândido Mariano, 775<br/>Cuiabá, Mato Grosso<br/>Certificado digital de 16h</p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <p><a href="https://wa.me/5565984762081" target="_blank" rel="noopener">(65) 98476-2081</a><br/><a href="mailto:sinter.mt@gmail.com">sinter.mt@gmail.com</a></p>
+        <h4 style="margin-top:18px;">Navegação</h4>
+        <p><a href="#evento">O evento</a> · <a href="#programacao">Programação</a> · <a href="#faq">FAQ</a></p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Sinter MT — 2ª Jornada de Práticas Integrativas de Saúde.</span>
+      <span><a href="#">Termos e condições</a> · <a href="#">Política de privacidade</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ STICKY MOBILE CTA ============ -->
+<div class="sticky-cta">
+  <div class="sticky-cta__info">
+    <b>2ª Jornada Sinter</b>
+    <span>12–13 set · Cuiabá · vagas limitadas</span>
+  </div>
+  <a class="btn btn--gold" href="#ingresso">Garantir vaga</a>
+</div>
+
+<!-- ============ VSL MODAL ============ -->
+<div class="modal" id="vsl-modal">
+  <div class="modal__box">
+    <button class="modal__close">✕ Fechar</button>
+    <div class="ph ph--navy"><span class="ph__label">Player do vídeo VSL · incorporar aqui</span></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
