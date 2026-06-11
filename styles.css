@@ -442,18 +442,19 @@ section { position: relative; }
 .diff--wide .diff__mark { font-size: 44px; }
 
 /* ============================================================
-   SEÇÃO 9/11 — GALERIA (masonry)
+   SEÇÃO 9/11 — GALERIA (marquee horizontal infinito)
    ============================================================ */
-.gallery { margin-top: 44px; column-count: 4; column-gap: 14px; }
-.gphoto { margin: 0 0 14px; border-radius: 12px; overflow: hidden; background: var(--navy-900); break-inside: avoid; display: block; }
-.gphoto img { width: 100%; height: auto; display: block; transition: transform .5s cubic-bezier(.2,.7,.2,1); }
+.gallery { margin-top: 44px; overflow: hidden; mask-image: linear-gradient(to right, transparent, #000 80px, #000 calc(100% - 80px), transparent); -webkit-mask-image: linear-gradient(to right, transparent, #000 80px, #000 calc(100% - 80px), transparent); }
+.gallery__track { display: flex; gap: 14px; width: max-content; animation: gallery-scroll 55s linear infinite; }
+.gallery__track:hover { animation-play-state: paused; }
+@keyframes gallery-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.gphoto { flex-shrink: 0; width: 280px; border-radius: 12px; overflow: hidden; background: var(--navy-900); display: block; }
+.gphoto img { width: 100%; height: 200px; object-fit: cover; display: block; transition: transform .5s cubic-bezier(.2,.7,.2,1); }
 .gphoto:hover img { transform: scale(1.04); }
-.gallery .gphoto:nth-child(4n+2) { transition-delay: 80ms; }
-.gallery .gphoto:nth-child(4n+3) { transition-delay: 160ms; }
-.gallery .gphoto:nth-child(4n+4) { transition-delay: 240ms; }
 .venue__tiles .vtile:nth-child(2) { transition-delay: 100ms; }
-@media (max-width: 900px) { .gallery { column-count: 3; } }
-@media (max-width: 600px) { .gallery { column-count: 2; } }
+@media (prefers-reduced-motion: reduce) { .gallery__track { animation: none; } }
+@media (max-width: 900px) { .gphoto { width: 220px; } .gphoto img { height: 160px; } }
+@media (max-width: 600px) { .gphoto { width: 180px; } .gphoto img { height: 130px; } }
 
 /* ============================================================
    SEÇÃO 10 — LOCAL

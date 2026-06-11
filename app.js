@@ -59,23 +59,6 @@
   applyStagger('.diffs',     '.diff.reveal',     0.08);
   applyStagger('.aud-list',  '.aud-item.reveal', 0.08);
 
-  /* ---------- Gallery: stagger por coluna ---------- */
-  window.addEventListener('load', function () {
-    var photos = document.querySelectorAll('.gallery .gphoto');
-    if (!photos.length) return;
-    var colMap = {};
-    photos.forEach(function (el) {
-      var x = Math.round(el.getBoundingClientRect().left / 4) * 4;
-      if (!colMap[x]) colMap[x] = [];
-      colMap[x].push(el);
-    });
-    var colKeys = Object.keys(colMap).map(Number).sort(function (a, b) { return a - b; });
-    colKeys.forEach(function (x, colIdx) {
-      colMap[x].forEach(function (el) {
-        el.style.transitionDelay = (colIdx * 0.07) + 's';
-      });
-    });
-  });
 
   /* ---------- Countdown ---------- */
   var target = new Date('2026-09-12T08:00:00-04:00').getTime();
