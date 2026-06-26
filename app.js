@@ -4,17 +4,19 @@
 (function () {
   'use strict';
 
-  /* ---------- Header scroll state + sticky CTA ---------- */
+  /* ---------- Header scroll state + CTA reveal (header + sticky mobile) ---------- */
   var header = document.querySelector('.site-header');
+  var navCta = document.querySelector('.nav-cta');
   var sticky = document.querySelector('.sticky-cta');
-  var hero = document.querySelector('.hero');
+  var CTA_REVEAL_PERCENT = 40;
   function onScroll() {
     var y = window.scrollY;
     if (header) header.classList.toggle('scrolled', y > 30);
-    if (sticky && hero) {
-      var heroBottom = hero.offsetTop + hero.offsetHeight;
-      sticky.classList.toggle('show', y > heroBottom);
-    }
+    var scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    var scrollPercent = scrollable > 0 ? (y / scrollable) * 100 : 0;
+    var pastThreshold = scrollPercent > CTA_REVEAL_PERCENT;
+    if (navCta) navCta.classList.toggle('show', pastThreshold);
+    if (sticky) sticky.classList.toggle('show', pastThreshold);
   }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
@@ -95,31 +97,6 @@
     window.addEventListener('resize', function () { idx = 0; update(); });
     update();
   }());
-
-  /* ---------- Countdown ---------- */
-  var target = new Date('2026-09-12T08:00:00-04:00').getTime();
-  var cd = {
-    d: document.getElementById('cd-days'),
-    h: document.getElementById('cd-hours'),
-    m: document.getElementById('cd-mins'),
-    s: document.getElementById('cd-secs')
-  };
-  function pad(n) { return (n < 10 ? '0' : '') + n; }
-  function tick() {
-    if (!cd.d) return;
-    var diff = target - Date.now();
-    if (diff < 0) diff = 0;
-    var d = Math.floor(diff / 86400000);
-    var h = Math.floor((diff % 86400000) / 3600000);
-    var m = Math.floor((diff % 3600000) / 60000);
-    var s = Math.floor((diff % 60000) / 1000);
-    cd.d.textContent = pad(d);
-    cd.h.textContent = pad(h);
-    cd.m.textContent = pad(m);
-    cd.s.textContent = pad(s);
-  }
-  tick();
-  setInterval(tick, 1000);
 
   /* ---------- FAQ accordion ---------- */
   document.querySelectorAll('.faq-q').forEach(function (btn) {

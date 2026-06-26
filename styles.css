@@ -206,7 +206,8 @@ section { position: relative; }
 .nav-links { display: flex; gap: 30px; align-items: center; }
 .nav-links a { font-size: 14.5px; color: #34465a; font-weight: 600; transition: color .2s; white-space: nowrap; }
 .nav-links a:hover { color: var(--navy); }
-.nav-cta { display: flex; align-items: center; gap: 18px; }
+.nav-cta { display: flex; align-items: center; gap: 18px; opacity: 0; visibility: hidden; transition: opacity .35s ease, visibility .35s ease; }
+.nav-cta.show { opacity: 1; visibility: visible; }
 @media (max-width: 900px) { .nav-links { display: none; } }
 
 /* ============================================================
@@ -285,20 +286,32 @@ section { position: relative; }
 }
 
 /* ============================================================
-   COUNTDOWN STRIP
+   TICKER · VAGAS LIMITADAS
    ============================================================ */
-.strip {
-  background: var(--navy-900);
+.ticker {
+  background: linear-gradient(135deg, #ff4444 0%, #ff6b6b 100%);
   color: #fff;
-  padding-block: 26px;
-  border-block: 1px solid var(--line);
+  overflow: hidden;
+  padding-block: 12px;
 }
-.strip__inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
-.strip__label { font-family: var(--mono); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: #9db8db; }
-.countdown { display: flex; gap: 12px; }
-.cd-unit { text-align: center; min-width: 64px; }
-.cd-unit b { font-family: var(--sans); font-size: 38px; line-height: 1; display: block; font-weight: 700; color: #fff; }
-.cd-unit span { font-family: var(--mono); font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; color: #9db8db; }
+.ticker__inner { display: flex; width: max-content; animation: ticker-scroll 22s linear infinite; }
+.ticker__group { display: flex; flex-shrink: 0; }
+.ticker__group span {
+  font-family: var(--sans);
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-inline: 18px;
+}
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ticker__inner { animation: none; }
+}
 
 /* ============================================================
    GENÉRICO — section heading
