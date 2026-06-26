@@ -295,7 +295,7 @@ section { position: relative; }
   padding-block: 12px;
 }
 .ticker__inner { display: flex; width: max-content; animation: ticker-scroll 22s linear infinite; }
-.ticker__group { display: flex; flex-shrink: 0; }
+.ticker__group { display: flex; gap: 10px; padding-right: 10px; flex-shrink: 0; }
 .ticker__group span {
   font-family: var(--sans);
   font-weight: 800;
@@ -303,8 +303,8 @@ section { position: relative; }
   letter-spacing: .03em;
   text-transform: uppercase;
   white-space: nowrap;
-  padding-inline: 12px;
 }
+.ticker__dot { opacity: .85; }
 @keyframes ticker-scroll {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
