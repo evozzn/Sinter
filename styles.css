@@ -303,7 +303,7 @@ section { position: relative; }
   letter-spacing: .03em;
   text-transform: uppercase;
   white-space: nowrap;
-  padding-inline: 18px;
+  padding-inline: 12px;
 }
 @keyframes ticker-scroll {
   from { transform: translateX(0); }
