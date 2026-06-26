@@ -21,6 +21,29 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  /* ---------- Ticker: gera repetições suficientes para cobrir qualquer largura de tela ---------- */
+  (function () {
+    var ticker = document.querySelector('.ticker');
+    var inner = document.querySelector('.ticker__inner');
+    if (!ticker || !inner) return;
+    var UNIT_HTML = '<span>Vagas limitadas</span><span class="ticker__dot">•</span>';
+
+    function build() {
+      inner.innerHTML = '<div class="ticker__group">' + UNIT_HTML + '</div>';
+      var unitWidth = inner.querySelector('.ticker__group').getBoundingClientRect().width;
+      var repeats = Math.max(8, Math.ceil(ticker.clientWidth / unitWidth) + 2);
+      var blockHtml = '<div class="ticker__group">' + UNIT_HTML.repeat(repeats) + '</div>';
+      inner.innerHTML = blockHtml + blockHtml.replace('<div class="ticker__group">', '<div class="ticker__group" aria-hidden="true">');
+    }
+
+    build();
+    var resizeTimer;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(build, 200);
+    });
+  }());
+
   /* ---------- Scroll reveal ---------- */
   var revealEls = document.querySelectorAll('.reveal');
   var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
