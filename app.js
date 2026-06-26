@@ -4,19 +4,10 @@
 (function () {
   'use strict';
 
-  /* ---------- Header scroll state + CTA reveal (header + sticky mobile) ---------- */
+  /* ---------- Header scroll state ---------- */
   var header = document.querySelector('.site-header');
-  var navCta = document.querySelector('.nav-cta');
-  var sticky = document.querySelector('.sticky-cta');
-  var CTA_REVEAL_PERCENT = 40;
   function onScroll() {
-    var y = window.scrollY;
-    if (header) header.classList.toggle('scrolled', y > 30);
-    var scrollable = document.documentElement.scrollHeight - window.innerHeight;
-    var scrollPercent = scrollable > 0 ? (y / scrollable) * 100 : 0;
-    var pastThreshold = scrollPercent > CTA_REVEAL_PERCENT;
-    if (navCta) navCta.classList.toggle('show', pastThreshold);
-    if (sticky) sticky.classList.toggle('show', pastThreshold);
+    if (header) header.classList.toggle('scrolled', window.scrollY > 30);
   }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();

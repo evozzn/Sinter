@@ -206,8 +206,6 @@ section { position: relative; }
 .nav-links { display: flex; gap: 30px; align-items: center; }
 .nav-links a { font-size: 14.5px; color: #34465a; font-weight: 600; transition: color .2s; white-space: nowrap; }
 .nav-links a:hover { color: var(--navy); }
-.nav-cta { display: flex; align-items: center; gap: 18px; opacity: 0; visibility: hidden; transition: opacity .35s ease, visibility .35s ease; }
-.nav-cta.show { opacity: 1; visibility: visible; }
 @media (max-width: 900px) { .nav-links { display: none; } }
 
 /* ============================================================
@@ -243,7 +241,6 @@ section { position: relative; }
 .hero h1 em { font-style: normal; color: var(--gold); }
 .hero__sub { margin-top: 24px; max-width: 56ch; margin-inline: auto; }
 .hero__sub strong { color: #fff; font-weight: 600; }
-.hero__cta { margin-top: 32px; display: flex; gap: 16px; flex-wrap: wrap; align-items: center; justify-content: center; }
 .hero__meta {
   margin-top: 38px;
   display: flex; flex-wrap: wrap; gap: 14px 28px;
@@ -576,23 +573,6 @@ section { position: relative; }
 .footer a:hover { color: #fff; }
 .footer__bottom { margin-top: 38px; padding-top: 22px; border-top: 1px solid var(--line-on-navy); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 12.5px; color: #7d97bd; }
 @media (max-width: 700px) { .footer__grid { grid-template-columns: 1fr; gap: 24px; } }
-
-/* ============================================================
-   STICKY MOBILE CTA
-   ============================================================ */
-.sticky-cta {
-  position: fixed; left: 0; right: 0; bottom: 0; z-index: 70;
-  background: rgba(4,29,58,.94); backdrop-filter: blur(12px);
-  border-top: 1px solid var(--line);
-  padding: 12px var(--gutter);
-  display: flex; align-items: center; justify-content: space-between; gap: 14px;
-  transform: translateY(120%); transition: transform .4s cubic-bezier(.2,.7,.2,1);
-}
-.sticky-cta.show { transform: none; }
-.sticky-cta__info b { font-family: var(--sans); font-weight: 700; font-size: 16px; display: block; color: #fff; }
-.sticky-cta__info span { font-size: 12px; color: var(--ink-faint); }
-.sticky-cta .btn { flex: none; }
-@media (min-width: 901px) { .sticky-cta { display: none; } }
 
 /* VSL modal */
 .modal { position: fixed; inset: 0; z-index: 100; display: none; place-items: center; padding: 24px; background: rgba(2,16,33,.82); backdrop-filter: blur(6px); }
