@@ -294,7 +294,7 @@ section { position: relative; }
   overflow: hidden;
   padding-block: 12px;
 }
-.ticker__inner { display: flex; width: max-content; animation: ticker-scroll 22s linear infinite; }
+.ticker__inner { display: flex; width: max-content; animation: ticker-scroll 40s linear infinite; }
 .ticker__group { display: flex; gap: 10px; padding-right: 10px; flex-shrink: 0; }
 .ticker__group span {
   font-family: var(--sans);
