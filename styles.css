@@ -309,9 +309,6 @@ section { position: relative; }
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
-@media (prefers-reduced-motion: reduce) {
-  .ticker__inner { animation: none; }
-}
 
 /* ============================================================
    GENÉRICO — section heading
