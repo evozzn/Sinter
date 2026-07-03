@@ -238,7 +238,7 @@ section { position: relative; }
   color: #fff;
   width: 100%;
 }
-.hero h1 em { font-style: normal; color: var(--gold); }
+.hero h1 em, .hero__sub em { font-style: normal; color: var(--gold); }
 .hero__sub { margin-top: 24px; max-width: 56ch; margin-inline: auto; }
 .hero__sub strong { color: #fff; font-weight: 600; }
 .hero__meta {
@@ -359,6 +359,7 @@ section { position: relative; }
 @media (max-width: 520px) { .speakers { grid-template-columns: 1fr; } }
 .speaker__name { font-family: var(--sans); font-weight: 700; font-size: 16px; margin-top: 16px; color: #fff; }
 .speaker__role { font-size: 13px; color: #9db8db; margin-top: 3px; }
+.speaker__license { font-size: 12px; color: rgba(255,255,255,.45); margin-top: 4px; }
 .speaker__theme { font-size: 13px; color: var(--gold); margin-top: 10px; font-family: var(--mono); letter-spacing: .02em; line-height: 1.4; }
 .speakers-note { margin-top: 40px; font-size: 14px; color: #9db8db; font-family: var(--mono); letter-spacing: .04em; }
 
