@@ -581,3 +581,25 @@ section { position: relative; }
 .modal__box { width: min(900px, 100%); aspect-ratio: 16/9; background: var(--navy-900); border-radius: 16px; position: relative; overflow: hidden; }
 .modal__close { position: absolute; top: -42px; right: 0; background: none; border: none; color: #fff; cursor: pointer; font-size: 14px; font-family: var(--mono); letter-spacing: .1em; }
 .modal__box .ph { width: 100%; height: 100%; border-radius: 16px; }
+
+/* WhatsApp floating button */
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 90;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25D366;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,.28);
+  transition: transform .2s ease, filter .2s ease, box-shadow .2s ease;
+}
+.whatsapp-float svg { width: 32px; height: 32px; color: #fff; }
+.whatsapp-float:hover, .whatsapp-float:focus-visible { transform: scale(1.08); filter: brightness(1.08); box-shadow: 0 6px 20px rgba(0,0,0,.34); }
+@media (max-width: 700px) {
+  .whatsapp-float { width: 52px; height: 52px; right: 16px; bottom: 16px; }
+  .whatsapp-float svg { width: 28px; height: 28px; }
+}
