@@ -524,7 +524,7 @@ section { position: relative; }
    SEÇÃO 11 — HOSPEDAGEM
    ============================================================ */
 .hotel-category { margin-top: 56px; }
-.hotel-category + .hotel-category { margin-top: 72px; border-top: 1px solid var(--line-on-navy); padding-top: 60px; }
+.hotel-category + .hotel-category { margin-top: 72px; }
 .hotel-category__head {
   display: flex; align-items: center; gap: 20px;
   padding-bottom: 22px; border-bottom: 1px solid var(--line-on-navy); margin-bottom: 28px;
