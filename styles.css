@@ -131,6 +131,7 @@ section { position: relative; }
 .btn--ghost:hover { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.4); }
 .btn--ghost-light { background: transparent; color: #fff; border-color: var(--line-on-navy); }
 .btn--ghost-light:hover { background: #fff; color: var(--navy); border-color: #fff; }
+.btn--disabled { background: #9CA3AF; color: #fff; cursor: not-allowed; box-shadow: none; pointer-events: none; }
 .btn--lg { font-size: 18px; padding: 20px 34px; }
 
 /* ============================================================
