@@ -697,7 +697,7 @@ section { position: relative; }
 }
 
 /* ============ PATROCINADORES ============ */
-.sponsors__tiers { margin-top: 48px; display: flex; flex-direction: column; gap: 48px; }
+.sponsors__tiers { margin-top: 72px; display: flex; flex-direction: column; gap: 48px; }
 .sponsors__tier { text-align: center; }
 .sponsors__tier-label {
   font-family: var(--mono);
@@ -719,12 +719,18 @@ section { position: relative; }
 /* Logos direto no fundo escuro */
 .sponsor-logo { display: flex; align-items: center; justify-content: center; }
 .sponsor-logo img { display: block; width: auto; max-width: none; object-fit: contain; }
+.sponsor-logo--diamond img { height: 170px; }
 .sponsor-logo--gold img  { height: 140px; }
 .sponsor-logo--silver img { height: 130px; }
+
+/* Divisórias entre níveis */
+.sponsors__tier--diamond,
+.sponsors__tier--gold { padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.08); }
 
 @media (max-width: 600px) {
   .sponsors__tiers { gap: 36px; }
   .sponsors__grid { gap: 28px; }
+  .sponsor-logo--diamond img { height: 110px; }
   .sponsor-logo--gold img  { height: 80px; }
   .sponsor-logo--silver img { height: 76px; }
 }
