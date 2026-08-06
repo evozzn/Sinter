@@ -722,10 +722,12 @@ section { position: relative; }
 .sponsor-logo--diamond img { height: 170px; }
 .sponsor-logo--gold img  { height: 140px; }
 .sponsor-logo--silver img { height: 130px; }
+.sponsor-logo--bronze img { height: 110px; }
 
 /* Divisórias entre níveis */
 .sponsors__tier--diamond,
-.sponsors__tier--gold { padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.sponsors__tier--gold,
+.sponsors__tier--silver { padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.08); }
 
 @media (max-width: 600px) {
   .sponsors__tiers { gap: 36px; }
@@ -733,4 +735,5 @@ section { position: relative; }
   .sponsor-logo--diamond img { height: 110px; }
   .sponsor-logo--gold img  { height: 80px; }
   .sponsor-logo--silver img { height: 76px; }
+  .sponsor-logo--bronze img { height: 32px; }
 }
