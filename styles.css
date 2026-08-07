@@ -618,6 +618,7 @@ section { position: relative; }
 .ticket--sold-out { position: relative; opacity: 0.6; }
 .ticket--sold-out .ticket__price .val,
 .ticket--sold-out .ticket__price .cents { color: #9CA3AF; }
+.ticket--sold-out .ticket__badge--vip { background: #9CA3AF; color: #fff; }
 .ticket--sold-out::after {
   content: 'ESGOTADO';
   position: absolute;
