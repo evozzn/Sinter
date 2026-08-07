@@ -10,6 +10,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   
 <!-- Meta Pixel -->
 <script>
@@ -823,7 +826,7 @@ fbq('track', 'PageView');
     </div>
     <div class="tickets">
       <!-- STANDARD -->
-      <div class="ticket reveal d1">
+      <div class="ticket ticket--sold-out reveal d1">
         <div class="ticket__top">
           <b>Standard</b>
           <span class="ticket__badge">1º Lote</span>
@@ -843,12 +846,37 @@ fbq('track', 'PageView');
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Participação em sorteios e brindes</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Certificado de participação</li>
           </ul>
-          <a class="btn btn--gold btn--lg" href="https://chk.eduzz.com/D0R8J5GA9Y" target="_blank" rel="noopener">Garantir Standard</a>
+          <span class="btn btn--disabled btn--lg">1° Lote Esgotado</span>
+        </div>
+      </div>
+
+      <!-- STANDARD 2° LOTE -->
+      <div class="ticket reveal d2">
+        <div class="ticket__top">
+          <b>Standard</b>
+          <span class="ticket__badge">2º Lote</span>
+        </div>
+        <div class="ticket__body">
+          <div class="ticket__price">
+            <span class="from">a partir de</span>
+            <span class="amount"><span class="val">R$&nbsp;297</span><span class="cents">,00</span></span>
+          </div>
+          <p class="ticket__pay">Cartão de crédito · Boleto · Pix</p>
+          <ul class="ticket__incl">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Dois dias de evento</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Participação em mais de 15 palestras</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Kit boas-vindas</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Acesso à feira com mais de 15 expositores</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Desconto exclusivo nos produtos</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Participação em sorteios e brindes</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Certificado de participação</li>
+          </ul>
+          <a class="btn btn--gold btn--lg" href="https://chk.eduzz.com/7WXGBYZO0A" target="_blank" rel="noopener">Garantir Standard 2</a>
         </div>
       </div>
 
       <!-- VIP -->
-      <div class="ticket ticket--vip reveal d2">
+      <div class="ticket ticket--vip reveal d3">
         <div class="ticket__top">
           <b>VIP</b>
           <span class="ticket__badge ticket__badge--vip">Experiência completa</span>
@@ -866,7 +894,7 @@ fbq('track', 'PageView');
             <li class="vip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Sacola dourada</li>
             <li class="vip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Credenciamento rápido e sem filas</li>
           </ul>
-          <span class="btn btn--disabled btn--lg">Esgotado</span>
+          <a class="btn btn--gold btn--lg" href="https://chk.eduzz.com/8WPNX5KN0P" target="_blank" rel="noopener">Garantir VIP</a>
         </div>
       </div>
     </div>
