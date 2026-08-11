@@ -741,7 +741,7 @@ section { position: relative; }
 /* Logos direto no fundo escuro */
 .sponsor-logo { display: flex; align-items: center; justify-content: center; }
 .sponsor-logo img { display: block; width: auto; max-width: none; object-fit: contain; }
-.sponsor-logo--diamond img { height: 170px; }
+.sponsor-logo--diamond img { height: 110px; }
 .sponsor-logo--gold img  { height: 140px; }
 .sponsor-logo--silver img { height: 130px; }
 .sponsor-logo--bronze img { height: 110px; }
