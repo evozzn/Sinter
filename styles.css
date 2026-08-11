@@ -745,7 +745,10 @@ section { position: relative; }
 .sponsor-logo--gold img  { height: 140px; }
 .sponsor-logo--silver img { height: 130px; }
 .sponsor-logo--vitale img { height: 80px; }
+.sponsor-logo--essencie img { height: 110px; }
 .sponsor-logo--bronze img { height: 110px; }
+/* Altura fixa nos wrappers Silver garante alinhamento vertical uniforme */
+.sponsors__tier--silver .sponsor-logo { height: 130px; }
 
 /* Divisórias entre níveis */
 .sponsors__tier--diamond,
@@ -759,5 +762,7 @@ section { position: relative; }
   .sponsor-logo--gold img  { height: 80px; }
   .sponsor-logo--silver img { height: 76px; }
   .sponsor-logo--vitale img { height: 48px; }
+  .sponsor-logo--essencie img { height: 66px; }
+  .sponsors__tier--silver .sponsor-logo { height: 76px; }
   .sponsor-logo--bronze img { height: 32px; }
 }
