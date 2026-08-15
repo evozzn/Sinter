@@ -746,6 +746,7 @@ section { position: relative; }
 .sponsor-logo--silver img { height: 130px; }
 .sponsor-logo--vitale img { height: 80px; }
 .sponsor-logo--essencie img { height: 110px; }
+.sponsor-logo--monsalutte img { height: 88px; }
 .sponsor-logo--bronze img { height: 110px; }
 /* Altura fixa nos wrappers Silver garante alinhamento vertical uniforme */
 .sponsors__tier--silver .sponsor-logo { height: 130px; }
@@ -763,6 +764,7 @@ section { position: relative; }
   .sponsor-logo--silver img { height: 76px; }
   .sponsor-logo--vitale img { height: 48px; }
   .sponsor-logo--essencie img { height: 66px; }
+  .sponsor-logo--monsalutte img { height: 60px; }
   .sponsors__tier--silver .sponsor-logo { height: 76px; }
   .sponsor-logo--bronze img { height: 32px; }
 }
