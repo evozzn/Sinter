@@ -680,6 +680,43 @@ section { position: relative; }
 /* ============================================================
    FOOTER
    ============================================================ */
+/* ===== APOIADORES — marquee ===== */
+.apoio-section { padding-top: clamp(40px, 5vw, 60px); }
+.marquee-wrapper { overflow: hidden; width: 100%; padding-block: 16px; }
+.marquee-logos {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 35s linear infinite;
+}
+.marquee-set {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  padding-inline: 28px;
+  flex-shrink: 0;
+}
+.marquee-set img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.marquee-set img.logo-aqua { height: 88px; }
+.marquee-set img.logo-bons { height: 88px; }
+.marquee-set img.logo-suco { height: 80px; }
+.marquee-wrapper:hover .marquee-logos { animation-play-state: paused; }
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-25%); }
+}
+@media (max-width: 600px) {
+  .marquee-set { gap: 32px; padding-inline: 16px; }
+  .marquee-set img { height: 32px; }
+  .marquee-set img.logo-aqua { height: 56px; }
+  .marquee-set img.logo-bons { height: 56px; }
+  .marquee-set img.logo-suco { height: 52px; }
+}
+
 .footer { background: var(--navy-900); color: #b9cae3; padding-block: 50px; border-top: 1px solid var(--line-on-navy); }
 .footer__grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 32px; }
 .footer .brand__mark { background: transparent; }
