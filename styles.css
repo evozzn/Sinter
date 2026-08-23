@@ -209,6 +209,24 @@ section { position: relative; }
 .nav-links a:hover { color: var(--navy); }
 @media (max-width: 900px) { .nav-links { display: none; } }
 
+/* ===== FAIXAS DE URGÊNCIA ===== */
+.urgency-bar {
+  width: 100%;
+  padding: 14px 20px;
+  text-align: center;
+  position: static;
+}
+.urgency-bar p {
+  font-size: clamp(16px, 2.5vw, 21px);
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0;
+}
+.urgency-bar--red { margin-top: 78px; background: #E4002B; }
+.urgency-bar--red p { color: #fff; }
+.urgency-bar--yellow { background: #FFD700; }
+.urgency-bar--yellow p { color: #021c39; }
+
 /* ============================================================
    HERO
    ============================================================ */
